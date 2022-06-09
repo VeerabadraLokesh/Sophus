@@ -147,7 +147,7 @@ namespace Sophus {
 
 template <class Scalar>
 struct Constants {
-  SOPHUS_FUNC static Scalar epsilon() { return Scalar(1e-10); }
+  SOPHUS_FUNC static Scalar epsilon() { return Scalar(1e-7); }
 
   SOPHUS_FUNC static Scalar epsilonPlus() {
     return epsilon() * (Scalar(1.) + epsilon());
